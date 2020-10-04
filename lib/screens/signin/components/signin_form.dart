@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:shopping_app/components/custom_suffix_icon.dart';
 import 'package:shopping_app/components/default_button.dart';
 import 'package:shopping_app/components/form_error.dart';
-import 'package:shopping_app/constants.dart';
 import 'package:shopping_app/screens/forgot_password/forgot_password_screen.dart';
-import 'package:shopping_app/size_config.dart';
+import 'package:shopping_app/screens/signin_success/signin_success_screen.dart';
+
+import '../../../constants.dart';
+import '../../../size_config.dart';
 
 class SigninForm extends StatefulWidget {
   @override
@@ -27,12 +29,9 @@ class _SigninFormState extends State<SigninForm> {
         children: [
           buildEmailFormField(),
           SizedBox(
-            height: getProportionateScreenHeight(30),
+            height: getProportionateScreenHeight(10),
           ),
           buildPasswordFormField(),
-          SizedBox(
-            height: getProportionateScreenHeight(30),
-          ),
           Row(
             children: [
               Checkbox(
@@ -69,6 +68,9 @@ class _SigninFormState extends State<SigninForm> {
             press: () {
               if (_formkey.currentState.validate()) {
                 _formkey.currentState.save();
+
+                // TODO: if all are valid then go to success screen
+                Navigator.pushNamed(context, SigninSuccessSreen.routeName);
               }
             },
           )
@@ -99,11 +101,14 @@ class _SigninFormState extends State<SigninForm> {
           setState(() {
             errors.add(kEmailNullError);
           });
+
+          return "";
         } else if (!emailValidatorRegExp.hasMatch(value) &&
             !errors.contains(kInvalidEmailError)) {
           setState(() {
             errors.add(kInvalidEmailError);
           });
+          return "";
         }
         return null;
       },
@@ -139,10 +144,12 @@ class _SigninFormState extends State<SigninForm> {
           setState(() {
             errors.add(kPwdNullError);
           });
+          return "";
         } else if (value.length < 6 && !errors.contains(kShortPwdError)) {
           setState(() {
             errors.add(kShortPwdError);
           });
+          return "";
         }
         return null;
       },
