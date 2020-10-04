@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:shopping_app/screens/forgot_password/forgot_password_screen.dart';
 import 'package:shopping_app/screens/signin/signin_screen.dart';
 import 'package:shopping_app/screens/splash/splash_screen.dart';
 
@@ -7,4 +8,5 @@ import 'package:shopping_app/screens/splash/splash_screen.dart';
 final Map<String, WidgetBuilder> routes = {
   SplashScreen.routeName: (context) => SplashScreen(),
   SigninScreen.routeName: (context) => SigninScreen(),
+  ForgotPasswordScreen.routeName: (context) => ForgotPasswordScreen(),
 };

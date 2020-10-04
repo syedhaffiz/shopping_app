@@ -4,6 +4,7 @@ import 'package:shopping_app/components/custom_suffix_icon.dart';
 import 'package:shopping_app/components/default_button.dart';
 import 'package:shopping_app/components/form_error.dart';
 import 'package:shopping_app/constants.dart';
+import 'package:shopping_app/screens/forgot_password/forgot_password_screen.dart';
 import 'package:shopping_app/size_config.dart';
 
 class SigninForm extends StatefulWidget {
@@ -45,10 +46,16 @@ class _SigninFormState extends State<SigninForm> {
               ),
               Text("Remember me"),
               Spacer(),
-              Text(
-                "Forgot Password",
-                style: TextStyle(
-                  decoration: TextDecoration.underline,
+              GestureDetector(
+                onTap: () => Navigator.pushNamed(
+                  context,
+                  ForgotPasswordScreen.routeName,
+                ),
+                child: Text(
+                  "Forgot Password",
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                  ),
                 ),
               )
             ],
