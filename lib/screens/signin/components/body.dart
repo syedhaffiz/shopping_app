@@ -39,7 +39,7 @@ class Body extends StatelessWidget {
                 ),
                 SigninForm(),
                 SizedBox(
-                  height: SizeConfig.screenHeight * 0.02,
+                  height: SizeConfig.screenHeight * 0.03,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

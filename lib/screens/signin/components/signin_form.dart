@@ -29,9 +29,12 @@ class _SigninFormState extends State<SigninForm> {
         children: [
           buildEmailFormField(),
           SizedBox(
-            height: getProportionateScreenHeight(10),
+            height: getProportionateScreenHeight(20),
           ),
           buildPasswordFormField(),
+          SizedBox(
+            height: getProportionateScreenHeight(30),
+          ),
           Row(
             children: [
               Checkbox(
