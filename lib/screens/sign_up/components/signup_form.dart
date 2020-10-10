@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:shopping_app/components/default_button.dart';
 import 'package:shopping_app/components/form_error.dart';
+import 'package:shopping_app/screens/complete_profile/complete_profile_screen.dart';
 
 import './../../../components/custom_suffix_icon.dart';
 import '../../../constants.dart';
@@ -43,6 +44,7 @@ class _SignupFormState extends State<SignupForm> {
             press: () {
               if (_formkey.currentState.validate()) {
                 // TODO: Go to complete profile page
+                Navigator.pushNamed(context, CompleteProfileScreen.routeName);
               }
             },
           ),
@@ -142,7 +144,7 @@ class _SignupFormState extends State<SignupForm> {
       obscureText: true,
       onSaved: (newValue) => confirmPassword = newValue,
       onChanged: (value) {
-        if (password == confirmPassword) {
+        if (password == value) {
           setState(() {
             errors.remove(kMatchPwdsError);
           });
@@ -152,8 +154,7 @@ class _SignupFormState extends State<SignupForm> {
       validator: (value) {
         if (value.isEmpty) {
           return "";
-        } else if (password != confirmPassword &&
-            !errors.contains(kMatchPwdsError)) {
+        } else if (password != value && !errors.contains(kMatchPwdsError)) {
           setState(() {
             errors.add(kMatchPwdsError);
           });
