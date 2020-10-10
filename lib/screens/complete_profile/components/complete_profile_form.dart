@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/screens/otp/otp_screen.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -57,7 +58,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
               text: "Continue",
               press: () {
                 if (_formKey.currentState.validate()) {
-                  // Go to OTP sceen
+                  Navigator.pushNamed(context, OTPScreen.routeName);
                 }
               },
             ),
