@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Product {
+  final int id;
   final String title, description;
   final List<String> images;
   final List<Color> colors;
@@ -8,6 +9,7 @@ class Product {
   final bool isFavourite, isPopular;
 
   Product({
+    @required this.id,
     @required this.title,
     @required this.description,
     @required this.images,
@@ -23,6 +25,7 @@ class Product {
 
 List<Product> demoProducts = [
   Product(
+    id: 1,
     title: "Wireless Controller for PS4™",
     description:
         "Elevate your competitive play with two additional, programmable buttons for your DUALSHOCK 4 wireless controller.",
@@ -44,6 +47,7 @@ List<Product> demoProducts = [
     isPopular: true,
   ),
   Product(
+    id: 2,
     title: "Logitech Wireless Headset",
     description:
         "Cut loose from your PC and roam freely as you talk. Lightweight and long-range wireless headset lets you listen and chat up to 33 ft. (10 m). Laser-tuned speaker drivers and noise-cancelling microphone delivers clear calls and stereo sound",
@@ -62,6 +66,7 @@ List<Product> demoProducts = [
     isPopular: true,
   ),
   Product(
+    id: 3,
     title: "Gloves XC Omega - Polygon",
     description:
         "The fun and trendy design makes these XC Omega gloves look elegant. Not only that, the stitching of the product is very neat. With lycra mesh, lycra, airmesh, clarino, and padding foam materials, this product is very comfortable to wear.",
@@ -80,6 +85,7 @@ List<Product> demoProducts = [
     isPopular: true,
   ),
   Product(
+    id: 4,
     title: "Nike Sport Man Pant - White",
     description:
         "The Nike Dri-FIT Trousers are crafted from a soft, jersey fabric that is heathered with a brushed back for added loft and comfort. The tapered legs, elastic waistband and roomy gusset let you move freely and without distraction while you shift positions and poses",

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../components/search_field.dart';
 import '../../../components/icon_btn_with_badge.dart';
 import '../../../size_config.dart';
+import '../../cart/cart_screen.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
@@ -21,7 +22,7 @@ class HomeHeader extends StatelessWidget {
           SearchField(),
           IconButtonWithBadge(
             svgSrc: "assets/icons/Cart Icon.svg",
-            press: () {},
+            press: () => Navigator.pushNamed(context, CartScreen.routeName),
           ),
           IconButtonWithBadge(
             svgSrc: "assets/icons/Bell.svg",
