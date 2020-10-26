@@ -59,7 +59,7 @@ List<Product> demoProducts = [
     price: 29.99,
     rating: 3.9,
     isFavourite: true,
-    isPopular: false,
+    isPopular: true,
   ),
   Product(
     title: "Gloves XC Omega - Polygon",
