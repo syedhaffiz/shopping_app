@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/constants.dart';
-import 'package:shopping_app/size_config.dart';
+
+import '../../../constants.dart';
+import '../../../size_config.dart';
 
 class SplashContent extends StatelessWidget {
   const SplashContent({Key key, this.text, this.image}) : super(key: key);

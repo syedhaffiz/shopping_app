@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/components/social_card.dart';
-import 'package:shopping_app/screens/sign_up/components/signup_form.dart';
 
 import '../../../size_config.dart';
 import '../../../constants.dart';
+import '../../../components/social_card.dart';
+import './signup_form.dart';
 
 class Body extends StatelessWidget {
   @override

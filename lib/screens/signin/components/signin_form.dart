@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:shopping_app/components/custom_suffix_icon.dart';
-import 'package:shopping_app/components/default_button.dart';
-import 'package:shopping_app/components/form_error.dart';
-import 'package:shopping_app/screens/forgot_password/forgot_password_screen.dart';
-import 'package:shopping_app/screens/signin_success/signin_success_screen.dart';
-
 import '../../../constants.dart';
 import '../../../size_config.dart';
+import '../../../components/custom_suffix_icon.dart';
+import '../../../components/default_button.dart';
+import '../../../components/form_error.dart';
+import '../../../screens/forgot_password/forgot_password_screen.dart';
+import '../../../screens/signin_success/signin_success_screen.dart';
 
 class SigninForm extends StatefulWidget {
   @override

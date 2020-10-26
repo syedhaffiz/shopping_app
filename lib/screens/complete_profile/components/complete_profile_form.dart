@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/screens/otp/otp_screen.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
 import '../../../components/custom_suffix_icon.dart';
 import '../../../components/default_button.dart';
 import '../../../components/form_error.dart';
+import '../../../screens/otp/otp_screen.dart';
 
 class CompleteProfileForm extends StatefulWidget {
   @override

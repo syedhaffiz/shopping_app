@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:shopping_app/components/default_button.dart';
-import 'package:shopping_app/components/form_error.dart';
-import 'package:shopping_app/screens/complete_profile/complete_profile_screen.dart';
-
-import './../../../components/custom_suffix_icon.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
+import '../../../components/default_button.dart';
+import '../../../components/form_error.dart';
+import '../../../screens/complete_profile/complete_profile_screen.dart';
+import '../../../components/custom_suffix_icon.dart';
 
 class SignupForm extends StatefulWidget {
   @override

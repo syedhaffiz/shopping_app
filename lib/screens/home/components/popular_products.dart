@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'package:shopping_app/models/Product.dart';
-import 'package:shopping_app/screens/product_details/product_details_screen.dart';
-
-import './section_title.dart';
-import '../../../components/product_card.dart';
+import '../../../models/Product.dart';
 import '../../../size_config.dart';
+import '../../../screens/product_details/product_details_screen.dart';
+import '../../../components/product_card.dart';
+import './section_title.dart';
 
 class PopularProducts extends StatelessWidget {
   const PopularProducts({

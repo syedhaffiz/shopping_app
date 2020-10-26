@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/constants.dart';
-import 'package:shopping_app/screens/signin/signin_screen.dart';
-import 'package:shopping_app/size_config.dart';
 
-import '../components/splash_content.dart';
+import '../../../constants.dart';
+import '../../../size_config.dart';
 import '../../../components/default_button.dart';
+import '../../../screens/signin/signin_screen.dart';
+import '../components/splash_content.dart';
 
 class Body extends StatefulWidget {
   @override

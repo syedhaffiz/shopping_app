@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/components/no_account_text.dart';
-import 'package:shopping_app/components/social_card.dart';
-
-import 'signin_form.dart';
 
 import '../../../size_config.dart';
+import '../../../components/no_account_text.dart';
+import '../../../components/social_card.dart';
+import './signin_form.dart';
 
 class Body extends StatelessWidget {
   @override

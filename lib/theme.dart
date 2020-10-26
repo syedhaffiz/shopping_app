@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/constants.dart';
+
+import 'constants.dart';
 
 ThemeData theme() {
   return ThemeData(

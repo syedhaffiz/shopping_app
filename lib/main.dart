@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/routes.dart';
-import 'package:shopping_app/screens/splash/splash_screen.dart';
-import 'package:shopping_app/theme.dart';
+
+import 'routes.dart';
+import 'theme.dart';
+import './screens/splash/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
